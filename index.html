@@ -1,10 +1,60 @@
 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre Ernesto</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    
+    <!-- Favicon -->
+<link rel="icon" href="https://bucket.mlcdn.com/a/3336/3336910/images/cb4b37522607da45b7f91a8253f835eaf09b1f9e.png">
 
     <link rel="stylesheet" href="styles.css">
 
 
+<script>
+  // Create and show loader
+  function showLoader() {
+    const loader = document.createElement('div');
+    loader.className = 'page-loader';
+    loader.innerHTML = `
+      <div class="loader-header">Wait for it...</div>
+      <div class="progress"></div>
+    `;
+    document.body.appendChild(loader);
+    return loader;
+  }
 
+  // Hide loader after 2 seconds
+  function initLoader() {
+    const loader = showLoader();
+    
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      setTimeout(() => loader.remove(), 300); // Remove after fade out
+    }, 2000); // 2 second duration
+  }
+
+  // Initialize when DOM is ready
+  document.addEventListener('DOMContentLoaded', initLoader);
+</script>
+<!-- CSS LOADER  - PROGRESS BAR WITH TEXT -->
+
+
+ 
+</head>
 
 <body>
 
@@ -122,7 +172,7 @@
                 <img src="https://bucket.mlcdn.com/a/3336/3336910/images/a6897380785f178e3f42d33b90f86fed8f8ce3b1.png" alt="" class="home-img">
 
                 <div class="home-data">
-    <h1 class="home-title">¡Hola, soy Barclay! <span class="wave-emoji">👋</span></h1>
+    <h1 class="home-title">¡Hola, soy Ernesto! <span class="wave-emoji">👋</span></h1>
 
     <h3 class="home-subtitle">
         Construyo Negocios Digitales que Generan Leads, Ventas y Crecimiento
@@ -179,7 +229,7 @@
                         <i class="uil uil-envelope-edit info-icon"></i>
                         <div>
                             <h3 class="info-title">Correo Electrónico</h3>
-                            <span class="info-subtitle">barclay@bebelldigitalsolutions.com</span>
+                            <span class="info-subtitle">ernesto@projectfreedom.club</span>
                         </div>
                     </div>
                 </div>
@@ -203,7 +253,7 @@
             <div class="about-container container grid">
                 <img src="https://bucket.mlcdn.com/a/3336/3336910/images/6206d986a4e29406fe76181e4669bdb8746e5380.jpeg" alt="" class="about-img">
                 <div class="about-data">
-                    <h3 class="about-heading">Hola, soy Barclay, "<span style="color: var(--skin-color)">Ernesto</span>"</h3>
+                    <h3 class="about-heading">Hola, soy "<span style="color: var(--skin-color)">Ernesto</span>"</h3>
                     <p class="about-description">Soy emprendedor, diseñador arquitectónico y fundador de <strong>Bebell Digital Solutions</strong>. Durante los últimos 15+ años, mi equipo y yo hemos construido negocios, lanzado productos digitales, gestionado proyectos complejos y ayudado a marcas a establecer su presencia en línea a través de sitios web, automatización, comercio electrónico, integración de IA y estrategia digital.<br>Mi trabajo está impulsado por una creencia simple:
 Los negocios crecen más rápido cuando la tecnología, el marketing y las operaciones trabajan juntos como un solo sistema.<br>
                         <strong>
