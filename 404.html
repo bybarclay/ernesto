@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Página no encontrada</title>
+    <!-- Google Font for a modern look -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
+
 
 
     <!-- Favicon -->
@@ -22,7 +24,7 @@
             --box-color: hsl(210, 14%, 10%);
             --scroll-box-color: hsl(210, 12%, 38%);
             --scroll-thumb-color: #ff5011;
-            --hue-color: 210;
+            --hue-color: 210; /* for hsl fallbacks */
         }
 
         /* ===== RESET & BASE ===== */
@@ -60,6 +62,7 @@
         .card {
             position: relative;
             z-index: 1;
+            background: var(--box-color);
             background: rgba(10, 14, 19, 0.85);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
@@ -70,10 +73,12 @@
             width: 90%;
             text-align: center;
             box-shadow: 0 25px 50px -8px rgba(0, 0, 0, 0.8);
-            transition: transform 0.3s ease, box-shadow 0.4s ease;
+            
+            /* ===== UPDATED TRANSITION (includes border & shadow) ===== */
+            transition: transform 0.3s ease, box-shadow 0.4s ease, border-color 0.3s ease;
         }
 
-        /* ----- CARD HOVER EFFECT (new) ----- */
+        /* ===== NEW: CARD HOVER EFFECT ===== */
         .card:hover {
             transform: scale(1.04);
             box-shadow: 0 0 30px rgba(255, 80, 17, 0.25),
@@ -90,10 +95,11 @@
             margin-bottom: 0.25rem;
             letter-spacing: -4px;
 
-            /* ----- GLOW ANIMATION (new) ----- */
+            /* ===== NEW: GLOW ANIMATION (replaces static shadow) ===== */
             animation: glowPulse 2.5s ease-in-out infinite;
         }
 
+        /* ===== NEW: KEYFRAMES FOR THE BREATHING GLOW ===== */
         @keyframes glowPulse {
             0% {
                 text-shadow: 0 0 20px rgba(255, 80, 17, 0.4),
@@ -145,6 +151,10 @@
             box-shadow: 0 10px 30px rgba(255, 80, 17, 0.4);
         }
 
+        .btn:active {
+            transform: translateY(0);
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 600px) {
             .card {
@@ -165,8 +175,10 @@
 </head>
 <body>
 
+    <!-- Matrix Canvas -->
     <canvas id="matrix-canvas"></canvas>
 
+    <!-- Centered Card -->
     <div class="card">
         <h1>404</h1>
         <p class="subtitle">La página que buscas <span>no existe</span></p>
@@ -178,30 +190,40 @@
             const canvas = document.getElementById('matrix-canvas');
             const ctx = canvas.getContext('2d');
 
+            // Orange color (same as --skin-color)
             const ORANGE = '#ff5011';
+
             let width, height;
             let columns = [];
-            let fontSize = 20;
+            let fontSize = 20; // will adapt to screen size
 
+            // Resize function
             function resize() {
                 width = window.innerWidth;
                 height = window.innerHeight;
                 canvas.width = width;
                 canvas.height = height;
 
-                fontSize = Math.max(14, Math.min(20, width / 45));
+                // Adapt font size based on width
+                fontSize = Math.max(16, Math.min(24, width / 40));
+                // Number of columns
                 const colCount = Math.floor(width / fontSize);
                 columns = [];
                 for (let i = 0; i < colCount; i++) {
-                    columns.push({
+                    // Each column: { x, y, speed, chars }
+                    const col = {
                         x: i * fontSize + (fontSize / 2),
-                        y: Math.random() * height * -1,
-                        speed: 1.5 + Math.random() * 4,
-                    });
+                        y: Math.random() * height * -1, // start above screen
+                        speed: 2 + Math.random() * 6,
+                        chars: [] // we'll fill this each frame
+                    };
+                    columns.push(col);
                 }
             }
 
+            // Generate a random digit (0-9) or occasionally '4','0','4' to emphasize 404
             function getDigit() {
+                // 30% chance to output '4', '0', or '4' to make 404 more visible
                 const r = Math.random();
                 if (r < 0.15) return '4';
                 if (r < 0.30) return '0';
@@ -209,45 +231,65 @@
                 return Math.floor(Math.random() * 10).toString();
             }
 
+            // Animation loop
             function draw() {
-                ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
+                // Semi-transparent black to create trail effect
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
                 ctx.fillRect(0, 0, width, height);
 
+                // Set text style
                 ctx.font = fontSize + 'px "Courier New", monospace';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'top';
 
+                // Loop over each column
                 for (let col of columns) {
+                    // Move down
                     col.y += col.speed;
 
+                    // If off screen bottom, reset to top with random speed and position
                     if (col.y > height) {
-                        col.y = -fontSize * 3;
-                        col.speed = 1.5 + Math.random() * 4;
+                        col.y = -fontSize * 2;
+                        col.speed = 2 + Math.random() * 6;
                         col.x = Math.floor(Math.random() * (width / fontSize)) * fontSize + (fontSize / 2);
                     }
 
-                    const numChars = 5 + Math.floor(Math.random() * 10);
+                    // Determine number of characters to draw in this column (density)
+                    const numChars = 10 + Math.floor(Math.random() * 15);
                     for (let i = 0; i < numChars; i++) {
                         const yPos = col.y - i * fontSize;
+                        // Only draw if visible
                         if (yPos < -fontSize || yPos > height + fontSize) continue;
 
-                        const fadeFactor = 1 - (i / numChars) * 0.9;
-                        const finalOpacity = 0.5 * fadeFactor * (0.6 + 0.4 * Math.random());
-                        ctx.globalAlpha = Math.min(finalOpacity, 0.9);
+                        // Random opacity: brighter at the top (newest) fading out
+                        const opacity = 1 - (i / numChars) * 0.9;
+                        // Slight variation
+                        ctx.globalAlpha = opacity * (0.7 + 0.3 * Math.random());
+
+                        // Color: orange with slight brightness variation
                         ctx.fillStyle = ORANGE;
+                        // Alternative: use hsl with same hue but varying lightness
+                        // but we'll stick to solid orange for clarity
 
                         const char = getDigit();
                         ctx.fillText(char, col.x, yPos);
                     }
                 }
 
+                // Reset global alpha
                 ctx.globalAlpha = 1;
+
                 requestAnimationFrame(draw);
             }
 
+            // Initial setup and event listeners
             window.addEventListener('resize', resize);
             resize();
             draw();
+
+            // Optional: add a little glow effect by drawing a subtle overlay
+            // but not needed
+
         })();
     </script>
 </body>
