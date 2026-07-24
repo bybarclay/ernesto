@@ -649,6 +649,10 @@ a {
     align-items: flex-start;
 }
 
+
+
+
+
 /* Back to Top Button */
 #back-to-top {
     position: fixed;
@@ -668,15 +672,24 @@ a {
     box-shadow: 0 4px 10px rgba(255, 80, 17, 0.2);
 }
 
+
+
 #back-to-top:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(255, 80, 17, 0.3);
 }
 
+
+
+
 #back-to-top img {
     width: 24px;
     height: 24px;
 }
+
+
+
+
 
 /* ANIMATIONS */
 @keyframes fadeInUp {
