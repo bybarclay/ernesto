@@ -653,6 +653,9 @@ a {
 
 
 
+
+
+
 /* Back to Top Button */
 #back-to-top {
     position: fixed;
@@ -661,16 +664,8 @@ a {
     display: none;
     cursor: pointer;
     z-index: 1000;
-    background: linear-gradient(to right, var(--skin-color), #d43a00);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 80, 17, 0.2);
 }
+
 
 
 
@@ -679,13 +674,6 @@ a {
     box-shadow: 0 6px 15px rgba(255, 80, 17, 0.3);
 }
 
-
-
-
-#back-to-top img {
-    width: 24px;
-    height: 24px;
-}
 
 
 
