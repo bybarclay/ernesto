@@ -197,9 +197,12 @@ color: #ff8a5c;
 	text-align: center;
 }
 
+
+
+		
+
 /* ===== UPDATED PORTAL BUTTON WITH NAV-CTR-BTN STYLES ===== */
 #portalButton {
-    background: linear-gradient(to right, var(--skin-color), #d43a00);
     color: #fff;
     padding: 0.75rem 1.75rem;
     border-radius: 0.5rem;
@@ -215,6 +218,20 @@ color: #ff8a5c;
     font-family: "Unica One", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background: transparent;
+}
+
+#portalButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, var(--skin-color), #d43a00);
+    z-index: -1;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 #portalButton::after {
@@ -240,6 +257,15 @@ color: #ff8a5c;
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(255, 80, 17, 0.3);
 }
+
+
+
+
+
+
+
+
+		
 
 #portalContent {
 	transition: all 0.37s ease;
