@@ -255,7 +255,7 @@ a {
     font-size: 1.25rem;
     opacity: 0.9;
     margin-bottom: var(--mb1);
-    max-width: 720px;
+    max-width: 620px;
 }
 
 .hero-overline {
@@ -673,12 +673,6 @@ a {
 }
 
 
-
-
-
-
-
-
 /* ANIMATIONS */
 @keyframes fadeInUp {
     from {
@@ -793,17 +787,16 @@ a {
     opacity: 0.8;
 }
 
+
+
+
+
+
 /* Firefox */
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--skin-color) var(--box-color);
 }
-
-
-
-
-
-
 
 
 
