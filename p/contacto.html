@@ -682,34 +682,33 @@ a {
     align-items: flex-start;
 }
 
-/* Back to Top Button */
-#back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    cursor: pointer;
-    z-index: 1000;
-    background: linear-gradient(to right, var(--skin-color), #d43a00);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 80, 17, 0.2);
-}
+
+
+
+
+            
+        /* Botón Volver Arriba */
+    #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+
 
 #back-to-top:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(255, 80, 17, 0.3);
 }
 
-#back-to-top img {
-    width: 24px;
-    height: 24px;
-}
+
+
+
+
+            
 
 /* ANIMATIONS */
 @keyframes fadeInUp {
@@ -920,14 +919,34 @@ var ml_account = ml('accounts', '3336910', 't8p6n6m7b3', 'load');
     
     
     
-    <!-- Botón Volver Arriba -->
- 
 
+ <!-- Back to Top Button -->
 
 <!-- Widget Volver arriba -->
 <div id="back-to-top" onclick="scrollToTop()">
     <img src="https://bucket.mlcdn.com/a/3336/3336910/images/972c5065cffe83955d5322557dcdce28eca170e5.png" alt="Volver arriba" style="width: 40px; height: 40px;">
 </div>
+
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 
 
 
@@ -1048,26 +1067,7 @@ var ml_account = ml('accounts', '3336910', 't8p6n6m7b3', 'load');
     
     
     
-    <script>
-    // Agregar esta función
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-
-// También agregar el detector de eventos de desplazamiento para mostrar/ocultar el botón de volver arriba
-window.addEventListener('scroll', function() {
-    const backToTop = document.getElementById('back-to-top');
-    if (window.scrollY > 300) {
-        backToTop.style.display = 'block';
-    } else {
-        backToTop.style.display = 'none';
-    }
-});
-    
-</script>    
+  
     
     
     
