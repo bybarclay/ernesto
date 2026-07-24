@@ -187,6 +187,40 @@
             }
         }
     </style>
+
+
+
+
+<script>
+  // Crear y mostrar el cargador
+  function showLoader() {
+    const loader = document.createElement('div');
+    loader.className = 'page-loader';
+    loader.innerHTML = `
+      <div class="loader-header">Wait for it...</div>
+      <div class="progress"></div>
+    `;
+    document.body.appendChild(loader);
+    return loader;
+  }
+
+  // Ocultar el cargador después de 2 segundos
+  function initLoader() {
+    const loader = showLoader();
+    
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      setTimeout(() => loader.remove(), 300); // Eliminar después del desvanecimiento
+    }, 2000); // Duración de 2 segundos
+  }
+
+  // Inicializar cuando el DOM esté listo
+  document.addEventListener('DOMContentLoaded', initLoader);
+</script>
+<!-- CARGADOR CSS - BARRA DE PROGRESO CON TEXTO -->
+
+
+ 
 </head>
 <body>
 
