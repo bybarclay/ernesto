@@ -144,6 +144,7 @@
             position: relative;
             z-index: 1;
             transition: .4s;
+            text-decoration: none; /* ← Add this line to remove underline */
         }
 
          .btn::after {
@@ -192,12 +193,19 @@
     <!-- Matrix Canvas -->
     <canvas id="matrix-canvas"></canvas>
 
+ 
+
     <!-- Centered Card -->
     <div class="card">
         <h1>404</h1>
         <p class="subtitle">La página que buscas <span>no existe</span></p>
         <a href="/" class="btn">Volver al Inicio</a>
     </div>
+
+
+
+
+ 
 
     <script>
         (function() {
