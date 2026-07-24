@@ -64,7 +64,7 @@
 
 
 
-    
+      
    <!-- LANGUAGE FLOATING BUTTON -->
 <style>
   #lang-widget {
@@ -115,8 +115,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: block;
     opacity: 0;
@@ -137,57 +137,58 @@
   }
 
   /* --- ACTIVE STATE: THE ARC POSITIONING --- */
-  #lang-widget.active .lang-option {
+#lang-widget.active .lang-option {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Top-left Arc Position - Reduced distance */
+#lang-widget.active .lang-option:nth-child(1) {
+  transform: translate(-55px, -45px) scale(1);  /* Was: -75px, -65px */
+  transition-delay: 0.1s;
+}
+
+/* Middle-left Arc Position - Reduced distance */
+#lang-widget.active .lang-option:nth-child(2) {
+  transform: translate(-70px, 0px) scale(1);    /* Was: -100px, 0px */
+  transition-delay: 0.05s;
+}
+
+/* Bottom-left Arc Position - Reduced distance */
+#lang-widget.active .lang-option:nth-child(3) {
+  transform: translate(-55px, 45px) scale(1);   /* Was: -75px, 65px */
+  transition-delay: 0s;
+}
+
+/* --- DESKTOP HOVER SUPPORT --- */
+@media (hover: hover) {
+  #lang-widget:hover .lang-main {
+    transform: rotate(15deg) scale(1.05);
+  }
+  
+  #lang-widget:hover .lang-option {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
 
-  /* Top-left Arc Position */
-  #lang-widget.active .lang-option:nth-child(1) {
-    transform: translate(-75px, -65px) scale(1);
-    transition-delay: 0.1s; /* Staggered animation */
+  #lang-widget:hover .lang-option:nth-child(1) {
+    transform: translate(-55px, -45px) scale(1);  /* Was: -75px, -65px */
+    transition-delay: 0.1s;
   }
 
-  /* Middle-left Arc Position */
-  #lang-widget.active .lang-option:nth-child(2) {
-    transform: translate(-100px, 0px) scale(1);
+  #lang-widget:hover .lang-option:nth-child(2) {
+    transform: translate(-70px, 0px) scale(1);    /* Was: -100px, 0px */
     transition-delay: 0.05s;
   }
 
-  /* Bottom-left Arc Position */
-  #lang-widget.active .lang-option:nth-child(3) {
-    transform: translate(-75px, 65px) scale(1);
+  #lang-widget:hover .lang-option:nth-child(3) {
+    transform: translate(-55px, 45px) scale(1);   /* Was: -75px, 65px */
     transition-delay: 0s;
   }
+}
 
-  /* --- DESKTOP HOVER SUPPORT --- */
-  @media (hover: hover) {
-    #lang-widget:hover .lang-main {
-      transform: rotate(15deg) scale(1.05);
-    }
-    
-    #lang-widget:hover .lang-option {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-
-    #lang-widget:hover .lang-option:nth-child(1) {
-      transform: translate(-75px, -65px) scale(1);
-      transition-delay: 0.1s;
-    }
-
-    #lang-widget:hover .lang-option:nth-child(2) {
-      transform: translate(-100px, 0px) scale(1);
-      transition-delay: 0.05s;
-    }
-
-    #lang-widget:hover .lang-option:nth-child(3) {
-      transform: translate(-75px, 65px) scale(1);
-      transition-delay: 0s;
-    }
-  }
 </style>
 
 <div id="lang-widget">
@@ -243,11 +244,6 @@
     <!-- Contenido de la página -->
 
     
-
-
-
-
-
 
 
 
