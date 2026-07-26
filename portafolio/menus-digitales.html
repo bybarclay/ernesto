@@ -1,1 +1,248 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menús Digitales | Project Freedom</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Turret+Road:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+ 
+    
+    <!-- Favicon -->
+<link rel="icon" href="https://bucket.mlcdn.com/a/3336/3336910/images/cb4b37522607da45b7f91a8253f835eaf09b1f9e.png">
+
+
+
+
+
+
+<script>
+  // Crear y mostrar el cargador
+  function showLoader() {
+    const loader = document.createElement('div');
+    loader.className = 'page-loader';
+    loader.innerHTML = `
+      <div class="loader-header">Wait for it...</div>
+      <div class="progress"></div>
+    `;
+    document.body.appendChild(loader);
+    return loader;
+  }
+
+  // Ocultar el cargador después de 2 segundos
+  function initLoader() {
+    const loader = showLoader();
+    
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      setTimeout(() => loader.remove(), 300); // Eliminar después del desvanecimiento
+    }, 2000); // Duración de 2 segundos
+  }
+
+  // Inicializar cuando el DOM esté listo
+  document.addEventListener('DOMContentLoaded', initLoader);
+</script>
+<!-- CARGADOR CSS - BARRA DE PROGRESO CON TEXTO -->
+
+ 
+</head>
+<body>
+
+
+    
+    <!-- Barra de menú superior -->
+    <header class="top-menu-bar">
+        <div class="top-menu-content">
+            <a href="#" class="logo-container">
+                <img src="https://bucket.mlcdn.com/a/3336/3336910/images/cb4b37522607da45b7f91a8253f835eaf09b1f9e.png" alt="Logo de Project Freedom" class="logo-image">
+                <span class="logo-text">Project Freedom</span>
+            </a>
+            <nav class="nav-links">
+                <a href="https://projectfreedom.club">Inicio</a>
+                
+                <a href="/p/acerca">Acerca de</a>
+
+                <a href="/servicios">Servicios</a>
+                
+                <a href="/portafolio">Portafolio</a>
+                
+                <a href="/p/contacto">Contacto</a>
+                
+   <a href="/p/portal" class="nav-cta-btn"><strong>Únete al Movimiento</strong></a>
+                
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="relative container">
+            <span class="hero-overline">Nuestro portafolio</span>
+            <h1>Menús Digitales</h1>
+            <p>Explora nuestro portafolio de soluciones personalizadas de menús digitales para diversas industrias</p>
+        </div>
+    </section>
+
+
+
+
+   <!-- Sección de trabajos - Digital Stores -->
+<!-- Sección de trabajos - Digital Clinics -->
+<section class="work-section">
+    <div class="container">
+        <div class="work-container">
+            <!-- Adilya' Lome -->
+            <div class="work-card mix digital-clinic">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/beaf4da3821920fe5c11e50f5effc7fea2a37716.jpeg" alt="Vista previa de Adilya' Lome" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Adilya' Lome</h3>
+                        <p class="work-description">Solución integral de clínica digital con programación de citas y consultas virtuales</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Plataforma de Telemedicina</h3>
+                        <p class="details-description">Solución integral de clínica digital con programación de citas y consultas virtuales</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>10 Abr 2025</span></li>
+                            <li>Servicios - <span>Angular, Python, PostgreSQL, Soluciones de Salud</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Adilya' Lome</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HealthCare Center -->
+            <div class="work-card mix digital-clinic">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/974bb31c7c1796a16f2d6f0d994009887dd074b5.png" alt="Vista previa de HealthCare Center" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">HealthCare Center</h3>
+                        <p class="work-description">Plataforma de clínica digital para registros de pacientes, facturación y seguimiento de tratamientos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Sistema de Gestión de Salud</h3>
+                        <p class="details-description">Plataforma de clínica digital para registros de pacientes, facturación y seguimiento de tratamientos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>4 Abr 2025</span></li>
+                            <li>Servicios - <span>React Native, Node.js, MySQL, Integración de Sistemas</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">HealthCare Center</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+    </div>
+</section>
+
+
+
+
+    <!-- Popup de portafolio -->
+    <div class="portfolio-popup">
+        <div class="portfolio-popup-content">
+            <button class="portfolio-popup-close">
+                <i class="uil uil-times"></i>
+            </button>
+            <div class="pp-thumbnail">
+                <img src="" alt="">
+            </div>
+            <div class="portfolio-popup-body">
+                <!-- El contenido se insertará dinámicamente aquí -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Pie de página -->
+    <footer class="footer footer-bg">
+        <div class="footer-container container">
+            <div class="footer-brand">
+                <img src="https://bucket.mlcdn.com/a/3336/3336910/images/d1a9c0e6b2d24583954c393633859961b3df8115.png" alt="Logo de Behind the Box" class="footer-logo">
+                <h3 class="footer-title">Project Freedom</h3>
+                <p class="footer-subtitle">Diseñando la Libertad Desde Dentro.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="https://projectfreedom.club">Inicio</a></li>
+                
+                <li><a href="/p/acerca">Acerca</a></li>
+
+                <li><a href="/servicios">Servicios</a></li>
+                
+                <li><a href="/portafolio">Portafolio</a></li>
+
+                
+                <li><a href="/p/contacto">Contacto</a></li>
+                
+            </ul>
+            <div class="footer-socials">
+                <a href="#" target="_blank" class="footer-social"><i class="uil uil-facebook-f"></i></a>
+                <a href="#" target="_blank" class="footer-social"><i class="uil uil-instagram"></i></a>
+                <a href="https://linkedin.com/in/projectfredom" target="_blank" class="footer-social"><i class="uil uil-linkedin"></i></a>
+            </div>
+        </div>
+        <p class="footer-copy">&#169; 2024 <a href="#">Project Freedom</a>. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+<!-- Widget Volver arriba -->
+<div id="back-to-top" onclick="scrollToTop()">
+    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/972c5065cffe83955d5322557dcdce28eca170e5.png" alt="Volver arriba" style="width: 40px; height: 40px;">
+</div>
+
+
+
+
+
+
+    
+
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+    
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
