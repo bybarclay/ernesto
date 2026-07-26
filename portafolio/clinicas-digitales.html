@@ -1,1 +1,455 @@
 
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorios Digitales | Project Freedom</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Turret+Road:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+ 
+    
+    <!-- Favicon -->
+<link rel="icon" href="https://bucket.mlcdn.com/a/3336/3336910/images/cb4b37522607da45b7f91a8253f835eaf09b1f9e.png">
+
+
+
+
+
+
+<script>
+  // Crear y mostrar el cargador
+  function showLoader() {
+    const loader = document.createElement('div');
+    loader.className = 'page-loader';
+    loader.innerHTML = `
+      <div class="loader-header">Wait for it...</div>
+      <div class="progress"></div>
+    `;
+    document.body.appendChild(loader);
+    return loader;
+  }
+
+  // Ocultar el cargador después de 2 segundos
+  function initLoader() {
+    const loader = showLoader();
+    
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      setTimeout(() => loader.remove(), 300); // Eliminar después del desvanecimiento
+    }, 2000); // Duración de 2 segundos
+  }
+
+  // Inicializar cuando el DOM esté listo
+  document.addEventListener('DOMContentLoaded', initLoader);
+</script>
+<!-- CARGADOR CSS - BARRA DE PROGRESO CON TEXTO -->
+
+ 
+</head>
+<body>
+
+
+    
+    <!-- Barra de menú superior -->
+    <header class="top-menu-bar">
+        <div class="top-menu-content">
+            <a href="#" class="logo-container">
+                <img src="https://bucket.mlcdn.com/a/3336/3336910/images/cb4b37522607da45b7f91a8253f835eaf09b1f9e.png" alt="Logo de Project Freedom" class="logo-image">
+                <span class="logo-text">Project Freedom</span>
+            </a>
+            <nav class="nav-links">
+                <a href="https://projectfreedom.club">Inicio</a>
+                
+                <a href="/p/acerca">Acerca de</a>
+
+                <a href="/servicios">Servicios</a>
+                
+                <a href="/portafolio">Portafolio</a>
+                
+                <a href="/p/contacto">Contacto</a>
+                
+   <a href="/p/portal" class="nav-cta-btn"><strong>Únete al Movimiento</strong></a>
+                
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+    
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="relative container">
+            <span class="hero-overline">Nuestro portafolio</span>
+            <h1>Consultorios Digitales</h1>
+            <p>Explora nuestro portafolio de soluciones personalizadas de clínicas digitales para diversas industrias</p>
+        </div>
+    </section>
+
+
+
+    <!-- Sección de trabajos -->
+   <!-- Sección de trabajos - Digital Stores -->
+<section class="work-section">
+    <div class="container">
+        <div class="work-container">
+            <!-- Villa Russo, 1898 -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/d1c8c49e3b7fe84e0e4d481c24663d481dae5a79.jpeg" alt="Vista previa de Villa Russo, 1898" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Villa Russo, 1898</h3>
+                        <p class="work-description">Tienda digital completa con gestión de inventario y experiencia de pago sin interrupciones</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Plataforma de Moda de Comercio Electrónico</h3>
+                        <p class="details-description">Tienda digital completa con gestión de inventario y experiencia de pago sin interrupciones</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>28 Mar 2025</span></li>
+                            <li>Servicios - <span>Shopify, JavaScript, Stripe, Desarrollo de Comercio Electrónico</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Villa Russo, 1898</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Santé Brand -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/aaf21625f2cc7cfb8dda9d6f5e8828003ddbf6ef.png" alt="Vista previa de Santé Brand" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Santé Brand</h3>
+                        <p class="work-description">Ecosistema de comercio digital completo con integración de Azul Dominicana — automatizando pedidos, logística y pagos seguros para una marca de indumentaria médica de lujo.</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Plataforma de Comercio Electrónico de Moda Médica de Lujo</h3>
+                        <p class="details-description">Ecosistema de comercio digital completo con integración de Azul Dominicana — automatizando pedidos, logística y pagos seguros para una marca de indumentaria médica de lujo.</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>17 Abr 2025</span></li>
+                            <li>Servicios - <span>Integraciones de comercio electrónico, PHP, API de Azul Dominicana, Estrategia, Diseño UX/UI, Automatización de Comercio Electrónico</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Santé Brand</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casa Cool RD -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/fed113588440ffe7bcd0bf73e16c923cc1cb47e9.jpeg" alt="Vista previa de Casa Cool RD" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Casa Cool RD</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Casa Cool RD</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virtual Restaurant -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/31cdd958d61344f10993ec1c9f2c9cef4b3e8512.jpeg" alt="Vista previa de Virtual Restaurant" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Virtual Restaurant</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Virtual Restaurant</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yoxo Hair -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/6f4d7fd23fd5c0e8bd4a40552722bd46f5284717.jpeg" alt="Vista previa de Yoxo Hair" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Yoxo Hair</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Yoxo Hair</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wyncell Telecom -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/7d532d128406ef5a4dee9e3268c759132188ccf5.jpeg" alt="Vista previa de Wyncell Telecom" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Wyncell Telecom</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Wyncell Telecom</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lurinels -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/5071fce9be902fd29b1d41e4b73f0b02f2096c9f.jpeg" alt="Vista previa de Lurinels" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Lurinels</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Lurinels</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brisa de Mar -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/b860705b5ab6cc5bff3858fa3ccd9a613529d2c3.jpeg" alt="Vista previa de Brisa de Mar" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Brisa de Mar</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Brisa de Mar</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Viejevo Store -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/87ced504ea6354ca46f47651f1e13522d3057364.jpeg" alt="Vista previa de Viejevo Store" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Viejevo Store</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Viejevo Store</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nathalie Hazim -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/e046ab77cc855051e655803b64463d3ee6ffb5d9.jpeg" alt="Vista previa de Nathalie Hazim" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Nathalie Hazim</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Nathalie Hazim</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trendísima RD -->
+            <div class="work-card mix digital-store">
+                <div class="work-img-container">
+                    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/f21ff605f2b89c9a49f4421d23d6401631e66763.jpeg" alt="Vista previa de Trendísima RD" class="work-img">
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3 class="work-title">Trendísima RD</h3>
+                        <p class="work-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                    </div>
+                    <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Comercio Electrónico de Electrónica</h3>
+                        <p class="details-description">Tienda digital especializada en los últimos gadgets y accesorios tecnológicos</p>
+                        <ul class="details-info">
+                            <li>Creado - <span>20 Mar 2025</span></li>
+                            <li>Servicios - <span>Magento, PHP, API de PayPal, Desarrollo de Tienda</span></li>
+                            <li>Caso de estudio - <span><a href="www.portfolio.bebelldigitalsolutions.com">Trendísima RD</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Popup de portafolio -->
+    <div class="portfolio-popup">
+        <div class="portfolio-popup-content">
+            <button class="portfolio-popup-close">
+                <i class="uil uil-times"></i>
+            </button>
+            <div class="pp-thumbnail">
+                <img src="" alt="">
+            </div>
+            <div class="portfolio-popup-body">
+                <!-- El contenido se insertará dinámicamente aquí -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Pie de página -->
+    <footer class="footer footer-bg">
+        <div class="footer-container container">
+            <div class="footer-brand">
+                <img src="https://bucket.mlcdn.com/a/3336/3336910/images/d1a9c0e6b2d24583954c393633859961b3df8115.png" alt="Logo de Behind the Box" class="footer-logo">
+                <h3 class="footer-title">Project Freedom</h3>
+                <p class="footer-subtitle">Diseñando la Libertad Desde Dentro.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="https://projectfreedom.club">Inicio</a></li>
+                
+                <li><a href="/p/acerca">Acerca</a></li>
+
+                <li><a href="/servicios">Servicios</a></li>
+                
+                <li><a href="/portafolio">Portafolio</a></li>
+
+                
+                <li><a href="/p/contacto">Contacto</a></li>
+                
+            </ul>
+            <div class="footer-socials">
+                <a href="#" target="_blank" class="footer-social"><i class="uil uil-facebook-f"></i></a>
+                <a href="#" target="_blank" class="footer-social"><i class="uil uil-instagram"></i></a>
+                <a href="https://linkedin.com/in/projectfredom" target="_blank" class="footer-social"><i class="uil uil-linkedin"></i></a>
+            </div>
+        </div>
+        <p class="footer-copy">&#169; 2024 <a href="#">Project Freedom</a>. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+<!-- Widget Volver arriba -->
+<div id="back-to-top" onclick="scrollToTop()">
+    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/972c5065cffe83955d5322557dcdce28eca170e5.png" alt="Volver arriba" style="width: 40px; height: 40px;">
+</div>
+
+
+
+
+
+
+    
+
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+    
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
