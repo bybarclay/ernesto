@@ -6,32 +6,21 @@
     <title>Conoce al Equipo 😎</title>
 
 
-
-    
     <!-- Comentario: Los iconos están correctamente enlazados -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
-    
-    
     <!-- Agregar estas importaciones de fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;700&display=swap" rel="stylesheet">
 
 
-
-
-    
     
     <!-- Favicon -->
 <link rel="icon" href="https://bucket.mlcdn.com/a/3336/3336910/images/cb4b37522607da45b7f91a8253f835eaf09b1f9e.png">
 
 
-
-
-    
     
     <style>
         /* Tus variables CSS existentes y estilos base */
@@ -354,6 +343,10 @@
             transform: scale(1);
         }
 
+
+
+        
+
         /* Componente Laptop - CORREGIDO */
         .macbook-wrapper {
             position: relative;
@@ -662,15 +655,9 @@
             margin-right: auto;
             text-align: center; 
         }
-        /* --- Fin Estilos de la Sección de Desafíos --- */
 
         
-        
-        
-        
-        
-        
-        
+        /* --- Fin Estilos de la Sección de Desafíos --- */
         
         .progress-title {
             font-weight: var(--font-medium);
@@ -694,18 +681,12 @@
         }
 
         @keyframes grow {
-            from { width: 0%; }
+            from { width: 0%; 
+            }
         }
 
 
 
-
-
-
-
-
-
-        
 
         /* SECCIÓN DE RESULTADOS */
         #results {
@@ -744,11 +725,6 @@
         }
 
 
-
-
-
-
-        
 
         /* SECCIÓN CTA */
         .cta-section {
@@ -800,11 +776,7 @@
             transform: scale(1);
         }
 
-
-
-
-
-        
+ 
 
         /* ANIMACIONES */
         @keyframes fadeInUp {
@@ -954,11 +926,6 @@
     transform: translateY(-5px);
 }
 
-
-
-
-
-        
 
         /* Pie de página */
         .footer {
@@ -1184,10 +1151,7 @@
 
         .card {
             padding: 0;
-
-
-
-            
+        }
 
             /* lg-n-above */
             @media (width >=1024px) {
@@ -1682,549 +1646,7 @@ html {
         
         
         
-        
-        /* --- Barra de Menú Superior --- */
-  /* --- Barra de Menú Superior --- */
-.top-menu-bar {
-    position: sticky;
-    top: 1.5rem;
-    z-index: 50;
-    max-width: 1100px;
-    margin: 0 auto;
-    width: calc(100% - 2rem);
-    background-color: hsla(var(--hue-color), 14%, 10%, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid hsl(var(--hue-color), 12%, 26%);
-    border-radius: 0.75rem;
-    padding: 0.5rem 1.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-.top-menu-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.logo-container .logo-image {
-    height: 32px;
-    width: 32px;
-    object-fit: contain;
-    border-radius: 4px;
-}
-
-.logo-container .logo-text {
-    font-size: 1.1rem;
-    font-weight: var(--font-bold); 
-    color: var(--title-color); 
-    white-space: nowrap;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    color: var(--text-color);
-    font-weight: var(--font-medium);
-    transition: color 0.3s ease;
-    font-size: var(--small-font-size);
-}
-
-.nav-links a:hover {
-    color: var(--skin-color);
-}
-
-.nav-cta-btn {
-    background: linear-gradient(to right, var(--skin-color), #d43a00);
-    color: #fff;
-    padding: 0.75rem 1.75rem;
-    border-radius: 0.5rem;
-    font-weight: var(--font-medium);
-    font-size: var(--small-font-size);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 80, 17, 0.2);
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.nav-cta-btn::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--mirage-color);
-    color: #fff;
-    z-index: -1;
-    transform: scale(0);
-    border-radius: 0.5rem;
-    transition: transform 0.3s ease;
-}
-
-.nav-cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(255, 80, 17, 0.3);
- color: #fff !important; /* Forzar texto blanco al pasar el mouse */
-}
-
-.nav-cta-btn:hover::after {
-    transform: scale(1);
-}
-/* --- Fin Barra de Menú Superior --- */
-
-
-
-
-
-        /* SECCIÓN HERO - ALTURA ADAPTATIVA */
-        .hero {
-            position: relative;
-            /* CAMBIADO: Se eliminó la altura fija, ahora se adapta al contenido */
-            min-height: 10vh; /* Asegura al menos la altura completa de la ventana */
-            display: flex;
-            align-items: flex-start; 
-            justify-content: center;
-            text-align: center;
-            color: var(--title-color);
-            background-color: var(--body-color);
-            overflow: hidden;
-            /* AGREGADO: Padding para asegurar que el contenido no toque los bordes */
-            padding: 80px 0 60px; /* Padding superior para la navegación, inferior para el margen de la laptop */
-        }
-
-        .hero .relative {
-            position: relative;
-            z-index: 10;
-            padding: 0 1.5rem;
-            margin: 0 auto;
-            /* ELIMINADO: padding-top: 80px; - ahora manejado por el padding del hero */
-             /* Asegurar el ancho completo para un centrado adecuado */
-        }
-
-        .hero video {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.25;
-        }
-
-        .hero h1 {
-            font-size: var(--h1-font-size);
-            font-weight: var(--font-bold);
-            margin-bottom: var(--mb1);
-            animation: fadeInUp 1s ease-out;
-            margin-top: 0;
-            max-width: 960px;
-        }
-
-        .hero p {
-            font-size: 24px;
-            opacity: 0.9;
-            margin-bottom: var(--mb1);
-            max-width: 960px;
-        }
-
-        .hero-cta {
-            display: inline-block;
-            padding: 0.75rem 1.75rem;
-            background: linear-gradient(to right, var(--skin-color), #d43a00);
-            color: var(--title-color);
-            font-weight: var(--font-medium);
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 15px rgba(255, 80, 17, 0.3);
-            transition: all 0.3s;
-            position: relative;
-            z-index: 1;
-            margin-bottom: var(--mb3);
-        }
-
-        .hero-cta::after {
-            position: absolute;
-            content: '';
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--mirage-color);
-            z-index: -1;
-            transform-origin: center;
-            transform: scale(0);
-            border-radius: 0.5rem;
-            transition: .3s;
-        }
-
-        .hero-cta:hover::after {
-            transform: scale(1);
-        }
-
-
-
-.hero-overline {
-    color: var(--skin-color);
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.5rem;
-    display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Componente Laptop - CORREGIDO con margen inferior de 60px */
-        .macbook-wrapper {
-            position: relative;
-            background: transparent;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 60px; /* Cambiado a exactamente 60px */
-        }
-
-        .macbook-wrapper .macbook {
-            padding: 4% 6%;
-            margin: 0 auto;
-            max-width: 1500px;
-            background: transparent;
-            border-radius: 8px;
-        }
-
-        .macbook-wrapper .screen {
-            background: #000;
-            border-radius: 3% 3% 0.5% 0.5% / 5%;
-            margin: 0 auto;
-            position: relative;
-            width: 80%;
-        }
-
-        .macbook-wrapper .screen:before {
-            border: 2px solid #cacacc;
-            border-radius: 3% 3% 0.5% 0.5% / 5%;
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset, 0 0 1px 2px rgba(255, 255, 255, 0.3) inset;
-            content: "";
-            display: block;
-            padding-top: 67%;
-        }
-
-        .macbook-wrapper .viewport {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;
-            margin: 4.3% 3.2%;
-            background: #F2F1FB;
-            border-radius: 4px;
-        }
-
-        .macbook-wrapper .base {
-            position: relative;
-            width: 100%;
-            background: transparent;
-            border-radius: 8px;
-        }
-
-        .macbook-wrapper .base:before {
-            content: "";
-            display: block;
-            padding-top: 3.3%;
-            background: linear-gradient(#eaeced, #edeef0 55%, #fff 55%, #8a8b8f 56%, #999ba0 61%, #4B4B4F 84%, #262627 89%, rgba(0, 0, 0, .01) 98%);
-            border-radius: 0 0 10% 10%/ 0 0 50% 50%;
-        }
-
-        .macbook-wrapper .notch {
-            background: #ddd;
-            border-radius: 0 0 7% 7% / 0 0 95% 95%;
-            box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: -3.5%;
-            z-index: 2;
-            position: relative;
-            width: 14%;
-        }
-
-        .macbook-wrapper .notch:before {
-            content: "";
-            display: block;
-            padding-top: 10%;
-        }
-
-        .macbook-wrapper .macbook .viewport {
-            transition: background-position 20s ease;
-            background-position: 0 0;
-            background-size: 100% auto;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .macbook-wrapper .macbook:hover .viewport {
-            background-position: 0 100%;
-        }
-
-        .macbook-wrapper .macbook .viewport:after {
-            background: radial-gradient(circle at right bottom, transparent 75%, rgba(255, 255, 255, 0.05) 75%, transparent);
-            bottom: 0;
-            content: "";
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /* INFORMACIÓN DEL PROYECTO */
-        .info {
-            background-color: var(--box-color);
-            padding: 3rem 1.5rem;
-            text-align: center;
-        }
-
-        .info .grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .info h3 {
-            font-size: var(--small-font-size);
-            font-weight: var(--font-medium);
-            color: var(--skin-color);
-            margin-bottom: var(--mb05);
-        }
-
-        .info p {
-            font-size: var(--normal-font-size);
-            color: var(--title-color);
-        }
-
-        .info a {
-            color: var(--skin-color);
-            transition: color 0.3s;
-        }
-
-        .info a:hover {
-            color: var(--title-color);
-        }
-
-      
-        
-        
-        
-        
-        
-        
-        
-        
-        /* SECCIONES DE HISTORIA */
-        .story {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 5rem 1.5rem;
-        }
-
-
-
-
-
-
-
-
-
-
-        
-
-        /* --- Estilos de Sección con Iconos --- */
-        .icon-section {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-            margin-bottom: var(--mb2);
-        }
-        .icon-container {
-            flex-shrink: 0;
-            width: 70px;
-            height: 70px;
-            background: var(--box-color);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            border: 2px solid var(--skin-color);
-        }
-        .icon-container:hover {
-            background: var(--skin-color);
-            transform: scale(1.1);
-        }
-        .icon-container i {
-            font-size: 1.8rem;
-            color: var(--skin-color);
-            transition: color 0.3s ease;
-        }
-        .icon-container:hover i {
-            color: var(--title-color);
-        }
-        .icon-content {
-            flex: 1;
-        }
-        .icon-content h3 {
-            font-size: var(--h3-font-size);
-            font-weight: var(--font-medium);
-            margin-bottom: var(--mb05);
-            color: var(--title-color);
-        }
-        .icon-content p {
-            color: var(--text-color);
-        }
-       
-        
-        
-        
-        
-        
-        
-        
-        /* --- Fin Estilos de Sección con Iconos --- */
-
-        .fade-section {
-            margin-bottom: 4rem;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-section.animate-fadeInUp {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .section-with-image {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .section-image {
-            border-radius: 0.5rem;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .section-image:hover {
-            transform: translateY(-5px);
-        }
-
-        .section-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .story h2 {
-            font-size: var(--h2-font-size);
-            font-weight: var(--font-bold);
-            margin-bottom: var(--mb1);
-            color: var(--skin-color);
-        }
-
-        .story p {
-            font-size: var(--normal-font-size);
-            line-height: 1.7;
-            color: var(--text-color);
-            margin-bottom: var(--mb1);
-        }
-
-        .story ul {
-            list-style: disc;
-            margin-left: 1.5rem;
-            color: var(--text-color);
-        }
-        
-        /* --- Sección de Fondo Oscuro --- */
-        .dark-bg-section {
-            background-color: var(--box-color);
-            padding: 3rem 1.5rem;
-            border-radius: 0.5rem;
-            margin: 2rem 0;
-        }
-        
-        /* --- Sección de Testimonios --- */
-        .testimonial {
-            text-align: center;
-            max-width: 800px;
-            margin: 3rem auto 4rem auto;
-            padding: 2rem;
-            background-color: var(--box-color);
-            border-radius: 0.5rem;
-            border: 1px solid var(--scroll-thumb-color);
-        }
-
-        .testimonial img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: var(--mb1);
-            border: 3px solid var(--skin-color);
-        }
-
-        .testimonial-stars {
-            color: #f39c12;
-            font-size: 1.25rem;
-            margin-bottom: var(--mb15);
-        }
-
-        .testimonial-text {
-            font-size: var(--h3-font-size);
-            font-style: italic;
-            color: var(--title-color);
-            line-height: 1.6;
-            margin-bottom: var(--mb15);
-        }
-
-        .testimonial-author {
-            font-weight: var(--font-bold);
-            color: var(--skin-color);
-            font-size: var(--normal-font-size);
-        }
-        /* --- Fin Sección de Testimonios --- */
+  
 
         /* BARRAS DE PROGRESO */
         .progress-section {
@@ -2348,6 +1770,12 @@ html {
             transform: scale(1);
         }
 
+
+
+
+
+        
+
         /* ANIMACIONES */
         @keyframes fadeInUp {
             from {
@@ -2464,6 +1892,12 @@ html {
             align-items: flex-start;
         }
 
+
+
+
+
+        
+
         /* DISEÑO RESPONSIVO */
         @media screen and (max-width: 1024px) {
             .hero h1 {
@@ -2487,6 +1921,10 @@ html {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+
+
+        
 
         @media screen and (max-width: 768px) {
             /* Navegación Responsiva */
@@ -2548,6 +1986,9 @@ html {
             }
         }
 
+
+        
+
         @media screen and (max-width: 576px) {
             .nav-cta-btn {
                 padding: 0.6rem 1.25rem;
@@ -2563,6 +2004,9 @@ html {
                 font-size: var(--small-font-size);
             }
         }
+
+
+        
         
         /* Ajustes responsivos para el pie de página */
         @media screen and (max-width: 768px) {
@@ -2602,6 +2046,9 @@ html {
     margin: 2rem 0;
 }
 
+
+
+        
 /* Corrección para la sección de Soluciones Estratégicas en móvil */
 @media screen and (max-width: 768px) {
     .dark-bg-section {
@@ -2616,8 +2063,6 @@ html {
         text-align: center;
     }
 }
-
-
 
 
 /* Estilos de la barra de desplazamiento */
@@ -2646,10 +2091,6 @@ html {
     scrollbar-width: thin;
     scrollbar-color: var(--skin-color) var(--box-color);
 }
-
-
-
-
 
 
  /* Cargador de página con fondo negro */
@@ -2710,9 +2151,6 @@ html {
     pointer-events: none;
   }
 
-
-        
-        
     </style>
 
 
@@ -2746,14 +2184,13 @@ html {
 </script>
 <!-- CARGADOR CSS - BARRA DE PROGRESO CON TEXTO -->
 
-
-
-
-
     
 </head>
 <body>
 
+
+
+    
     <!-- === NUEVO: BARRA DE NAVEGACIÓN FLOTANTE === -->
     <header class="top-menu-bar">
         <div class="top-menu-content">
@@ -2764,24 +2201,23 @@ html {
             <nav class="nav-links">
                 <a href="https://projectfreedom.club">Inicio</a>
                 
-                <a href="/p/acerca">Acerca de</a>
-                
+                <a href="/p/acerca">Acerca de</a>    
 
                 <a href="/servicios">Servicios</a>
-                
-                
+                       
                 <a href="/proyectos">Portafolio</a>
                 
-  
                 <a href="/p/contacto">Contacto</a>
-
-                
                 
                 <a href="/p/portal" class="nav-cta-btn"><strong>Únete al Movimiento</strong></a>
             </nav>
         </div>
     </header>
     <!-- === FIN: BARRA DE NAVEGACIÓN FLOTANTE === -->  
+
+
+
+    
     
     <!-- El código de inserción del contenedor del Equipo comienza -->
 
