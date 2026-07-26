@@ -1,1 +1,473 @@
 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Oficinas Digitales | Behind the Box</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Turret+Road:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+ 
+    
+    <!-- Favicon -->
+<link rel="icon" href="https://bucket.mlcdn.com/a/3336/3336910/images/cb4b37522607da45b7f91a8253f835eaf09b1f9e.png">
+
+
+
+
+
+
+<script>
+  // Crear y mostrar el cargador
+  function showLoader() {
+    const loader = document.createElement('div');
+    loader.className = 'page-loader';
+    loader.innerHTML = `
+      <div class="loader-header">Wait for it...</div>
+      <div class="progress"></div>
+    `;
+    document.body.appendChild(loader);
+    return loader;
+  }
+
+  // Ocultar el cargador después de 2 segundos
+  function initLoader() {
+    const loader = showLoader();
+    
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      setTimeout(() => loader.remove(), 300); // Eliminar después del desvanecimiento
+    }, 2000); // Duración de 2 segundos
+  }
+
+  // Inicializar cuando el DOM esté listo
+  document.addEventListener('DOMContentLoaded', initLoader);
+</script>
+<!-- CARGADOR CSS - BARRA DE PROGRESO CON TEXTO -->
+
+ 
+</head>
+<body>
+
+
+    
+    <!-- Barra de menú superior -->
+    <header class="top-menu-bar">
+        <div class="top-menu-content">
+            <a href="#" class="logo-container">
+                <img src="https://bucket.mlcdn.com/a/3336/3336910/images/cb4b37522607da45b7f91a8253f835eaf09b1f9e.png" alt="Logo de Project Freedom" class="logo-image">
+                <span class="logo-text">Project Freedom</span>
+            </a>
+            <nav class="nav-links">
+                <a href="https://projectfreedom.club">Inicio</a>
+                
+                <a href="/p/acerca">Acerca de</a>
+
+                <a href="/servicios">Servicios</a>
+                
+                <a href="/portafolio">Portafolio</a>
+                
+                <a href="/p/contacto">Contacto</a>
+                
+   <a href="/p/portal" class="nav-cta-btn"><strong>Únete al Movimiento</strong></a>
+                
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+    
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="relative container">
+            <span class="hero-overline">Nuestro portafolio</span>
+            <h1>Tiendas Digitales</h1>
+            <p>Explora nuestro portafolio de soluciones personalizadas de tiendas digitales para diversas industrias</p>
+        </div>
+    </section>
+
+
+
+
+
+
+    
+
+    <!-- Sección de trabajos -->
+    <section class="work-section">
+        <div class="container">
+            <div class="work-container">
+                <!-- Tarjetas de Oficinas Digitales -->
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/7ad430b6a54fd2ae52e02805d7208c28b801ea94.jpeg" alt="Oficina digital de Balcacer & Asociados" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">Balcácer & Asociados</h3>
+                            <p class="work-description">Automatización de oficina legal con seguimiento de clientes, CRM y optimización SEO.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital legal personalizada</h3>
+                            <p class="details-description">Automatización de oficina legal con seguimiento de clientes, CRM y optimización SEO.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Feb 2024</span></li>
+                                <li>Servicios - <span>Automatización CRM, sistema de datos de clientes, SEO</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/balcacer-asociados">Balcácer & Asociados</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/d04530d9f4779d7792be454957de69b4b8dd963c.jpeg" alt="Oficina digital de DivorcioRD" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">DivorcioRD</h3>
+                            <p class="work-description">Oficina digital legal completa con automatización de embudo de captación y consultas en línea.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina legal automatizada</h3>
+                            <p class="details-description">Oficina digital legal completa con automatización de embudo de captación y consultas en línea.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Ene 2024</span></li>
+                                <li>Servicios - <span>Automatización, CRM, citas en línea</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/divorciord">DivorcioRD</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/39014f0efcc873761f9a8e1c62669333c1fcc124.jpeg" alt="Oficina digital de Farmacia Vegana" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">Farmacia Vegana</h3>
+                            <p class="work-description">Farmacia digital con automatización de entregas y sistema de pedidos por WhatsApp.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina farmacéutica de comercio electrónico</h3>
+                            <p class="details-description">Farmacia digital con automatización de entregas y sistema de pedidos por WhatsApp.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>May 2024</span></li>
+                                <li>Servicios - <span>Comercio electrónico, sistema de entregas, integración con WhatsApp</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/farmacia-vegana">Farmacia Vegana</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/5e2c63367745c661a063afe27d140d209e732033.jpeg" alt="Oficina digital de Senses Luxury Spa" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">Senses Luxury Spa</h3>
+                            <p class="work-description">Plataforma de automatización de reservas con gestión de tarjetas regalo y membresías.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital de spa de lujo</h3>
+                            <p class="details-description">Plataforma de automatización de reservas con gestión de tarjetas regalo y membresías.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Jun 2024</span></li>
+                                <li>Servicios - <span>Reservas en línea, automatización, membresías</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/senses-luxury-spa">Senses Luxury Spa</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/f2d579155c32eb4acbdf5891bcabc9a0f922529b.jpeg" alt="Oficina digital de HS Interior Design" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">HS Interior Design</h3>
+                            <p class="work-description">Portafolio en línea y sistema de reserva de consultas con CRM automatizado.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital de diseño de interiores</h3>
+                            <p class="details-description">Portafolio en línea y sistema de reserva de consultas con CRM automatizado.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Jul 2024</span></li>
+                                <li>Servicios - <span>Portafolio, automatización de reservas, CRM</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/hs-interior-design">HS Interior Design</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/43c7f5cac569068d066f5103fc3c1eb5fb49090f.jpeg" alt="Oficina digital de NEXED Travel" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">NEXED Travel</h3>
+                            <p class="work-description">Plataforma de creación de viajes con automatización de afiliados y flujos de reserva.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital de agencia de viajes</h3>
+                            <p class="details-description">Plataforma de creación de viajes con automatización de afiliados y flujos de reserva.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Ago 2024</span></li>
+                                <li>Servicios - <span>Creador de viajes, automatización de afiliados, CRM</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/nexed-travel">NEXED Travel</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/a5c0a36fd7815942be23fdac413c29287579c429.jpeg" alt="Oficina digital de Bicimetro Nacional" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">Bicimetro Nacional</h3>
+                            <p class="work-description">Plataforma para alquiler de bicicletas, programación de mantenimiento y membresías recurrentes.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital basada en suscripciones</h3>
+                            <p class="details-description">Plataforma para alquiler de bicicletas, programación de mantenimiento y membresías recurrentes.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Oct 2024</span></li>
+                                <li>Servicios - <span>Suscripciones, reservas, automatización</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/bicimetro">Bicimetro Nacional</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/e545e379b12553835b1e827954e2d0d559a25b2b.jpeg" alt="Oficina digital de Chef Jacada" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">Chef Jacada</h3>
+                            <p class="work-description">Sistema automatizado de reservas de catering con menús digitales y panel de cliente.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital de catering</h3>
+                            <p class="details-description">Sistema automatizado de reservas de catering con menús digitales y panel de cliente.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Abr 2024</span></li>
+                                <li>Servicios - <span>Menú digital, reservas en línea, automatización</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/chef-jacada">Chef Jacada</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/102c99b30d59d678c997f2319322e5c8dae89375.jpeg" alt="Oficina digital de Bebell Design Studio" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">Bebell Design Studio</h3>
+                            <p class="work-description">Plataforma de exhibición de proyectos y automatización de flujos de trabajo para colaboración creativa.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital de agencia creativa</h3>
+                            <p class="details-description">Plataforma de exhibición de proyectos y automatización de flujos de trabajo para colaboración creativa.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Sep 2024</span></li>
+                                <li>Servicios - <span>Portafolio, automatización, CRM</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/bebell-design-studio">Bebell Design Studio</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/7456eb9f12a3eaf68cd16c33ef7aa0f77b2dc674.jpeg" alt="Oficina digital de Grupo Lisman SRL" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">Grupo Lisman SRL</h3>
+                            <p class="work-description">Plataforma digital para distribuidores con catálogo automatizado y sistema de pedidos.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital corporativa B2B</h3>
+                            <p class="details-description">Plataforma digital para distribuidores con catálogo automatizado y sistema de pedidos.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Dic 2024</span></li>
+                                <li>Servicios - <span>Portal de distribuidores, automatización B2B</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/grupo-lisman">Grupo Lisman SRL</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://ik.imagekit.io/bebell/Customers/Digital%20Offices/As%20food%20as%20it%20gets.png?updatedAt=1762074449311" alt="Oficina digital de As Food As It Gets" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">As Food As It Gets</h3>
+                            <p class="work-description">Sistema de pedidos en línea, gestión de menús y automatización de entregas.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital de restaurante</h3>
+                            <p class="details-description">Sistema de pedidos en línea, gestión de menús y automatización de entregas.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Nov 2024</span></li>
+                                <li>Servicios - <span>Pedidos en línea, entregas, automatización</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/as-food-as-it-gets">As Food As It Gets</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card mix digital-office">
+                    <div class="work-img-container">
+                        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/44ee407b5d38bf67ab87f4ca9ddd187e6780ede3.jpeg" alt="Oficina digital de Fundación Rescued by Love" class="work-img">
+                    </div>
+                    <div class="work-content">
+                        <div>
+                            <h3 class="work-title">Fundación Rescued by Love</h3>
+                            <p class="work-description">Sistema de donaciones en línea con automatización y pasarela de pago integrada.</p>
+                        </div>
+                        <span class="work-button">Más info<i class="uil uil-arrow-right work-button-icon"></i></span>
+                        <div class="portfolio-item-details">
+                            <h3 class="details-title">Oficina digital sin fines de lucro</h3>
+                            <p class="details-description">Sistema de donaciones en línea con automatización y pasarela de pago integrada.</p>
+                            <ul class="details-info">
+                                <li>Creado - <span>Mar 2024</span></li>
+                                <li>Servicios - <span>Donaciones en línea, automatización, diseño web</span></li>
+                                <li>Caso de estudio - <span><a href="/projects/online-offices/fundacion-rescued-by-love">Fundación Rescued by Love</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Popup de portafolio -->
+    <div class="portfolio-popup">
+        <div class="portfolio-popup-content">
+            <button class="portfolio-popup-close">
+                <i class="uil uil-times"></i>
+            </button>
+            <div class="pp-thumbnail">
+                <img src="" alt="">
+            </div>
+            <div class="portfolio-popup-body">
+                <!-- El contenido se insertará dinámicamente aquí -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Pie de página -->
+    <footer class="footer footer-bg">
+        <div class="footer-container container">
+            <div class="footer-brand">
+                <img src="https://bucket.mlcdn.com/a/3336/3336910/images/d1a9c0e6b2d24583954c393633859961b3df8115.png" alt="Logo de Behind the Box" class="footer-logo">
+                <h3 class="footer-title">Project Freedom</h3>
+                <p class="footer-subtitle">Diseñando la Libertad Desde Dentro.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="https://projectfreedom.club">Inicio</a></li>
+                
+                <li><a href="/p/acerca">Acerca</a></li>
+
+                <li><a href="/servicios">Servicios</a></li>
+                
+                <li><a href="/portafolio">Portafolio</a></li>
+
+                
+                <li><a href="/p/contacto">Contacto</a></li>
+                
+            </ul>
+            <div class="footer-socials">
+                <a href="#" target="_blank" class="footer-social"><i class="uil uil-facebook-f"></i></a>
+                <a href="#" target="_blank" class="footer-social"><i class="uil uil-instagram"></i></a>
+                <a href="https://linkedin.com/in/projectfredom" target="_blank" class="footer-social"><i class="uil uil-linkedin"></i></a>
+            </div>
+        </div>
+        <p class="footer-copy">&#169; 2024 <a href="#">Project Freedom</a>. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+<!-- Widget Volver arriba -->
+<div id="back-to-top" onclick="scrollToTop()">
+    <img src="https://bucket.mlcdn.com/a/3336/3336910/images/972c5065cffe83955d5322557dcdce28eca170e5.png" alt="Volver arriba" style="width: 40px; height: 40px;">
+</div>
+
+
+
+
+
+
+    
+
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+    
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
